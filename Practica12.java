@@ -54,6 +54,10 @@ public class Practica12 {
     }
 
     public static int fibonacci(int numero){
+        if (numero<1){
+            System.out.println("Numero no valido");
+            return 1000000;
+        }
         if (numero == 1) {
             return 0;
         }
@@ -64,6 +68,10 @@ public class Practica12 {
     }
 
     public static void collatz(int numero){
+        if (numero<1){
+            System.out.println("Numero no valido");
+            return;
+        }
         while (numero!= 1) {
             if (numero % 2 == 0) {
                 numero /= 2;
